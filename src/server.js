@@ -18,12 +18,14 @@ const clientRoutes = require('./routes/clients');
 const filmRoutes = require('./routes/films');
 const sondageRoutes = require('./routes/sondages');
 const projectionRoutes = require('./routes/projections');
+const ticketRoutes = require('./routes/tickets');
 
 // Use routes
 app.use('/api/client', clientRoutes);
 app.use('/api/film', filmRoutes);
 app.use('/api/sondage', sondageRoutes);
 app.use('/api/projection', projectionRoutes);
+app.use('/api/ticket', ticketRoutes);
 
 // Base route
 app.get('/', (req, res) => {
